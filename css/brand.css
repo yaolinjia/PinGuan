@@ -102,8 +102,10 @@ section{
 }
 
 .kui .nine{
-    flex: 8.5;
+    flex: 8;
 }
+
+
 h2{
     font-size: 0.4rem;
     font-weight: bold;
@@ -155,8 +157,10 @@ footer{
     background: rgb(244,244,244);
     display: flex;
     /* flex-wrap: wrap; */
-    justify-content: space-around
-    
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .xinwen{
@@ -182,4 +186,16 @@ footer{
 }
 footer p{
   margin-left: 0.1rem 
+}
+#spread {
+    height: 0px;
+    overflow: hidden;
+}
+#btn{
+    float: right;
+} 
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
 }
