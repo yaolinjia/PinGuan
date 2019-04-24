@@ -1,0 +1,210 @@
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 1.1733rem;
+    /* background: salmon; */
+    display: flex;
+}
+.topp{
+    flex: 1;
+    text-align: center;
+    
+}
+.table .table-act{
+    font-size: 0.426667rem !important;
+    color: #000 !important;
+    border-bottom: 2px solid red;
+   }
+   .table a{
+    font-size:  0.35rem;
+    color: #666;
+  }
+.topp>a{
+    margin-right: 0.64rem;
+    display: inline-block;
+    line-height: 0.64rem;
+    padding-top: 0.266667rem;
+    padding-bottom: 0.186667rem;
+    font-size: 0.373333rem;
+    color: #999;
+    position: relative;
+}
+a.consult{
+    font-family: PingFangSC-Medium;
+    font-weight: 600;
+    font-size: 0.426667rem;
+    color: #333;
+}
+a.consult::after{
+    background: #E72410;
+}consult
+a::after{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 0.053333rem;
+    width: 0.533333rem;
+    background: transparent;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 0.213333rem;
+}
+.search{
+    width: 1.466667rem;
+    height: 100%;
+    overflow: hidden;
+    background: url(../img/all_search.png) center no-repeat;
+    background-size: 0.666667rem;
+}
+.icon-bar{
+    width: 1.466667rem;
+    height: 100%;
+    overflow: hidden;
+    background: url(../img/all_channel.png) center no-repeat;
+    background-size: 0.666667rem;
+}
+
+section{
+    flex: 1;
+   height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.time{
+    font-size: 0.3rem;
+    list-style:none
+}
+.time ul{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 1.2rem;
+    background: rgb(244,244,244);
+    line-height: 1.2rem;
+}
+.kui{
+    flex: 10;
+    display: flex;
+    font-size: 0.35rem;
+    padding-top: 0.3rem;
+}
+.kui .one{
+    flex: 1.5;
+    /* background: rgb(210, 233, 5); */
+    display: flex;
+}
+.red{
+    font-size: 0.3rem;
+    background:red;
+    width: 0.15rem;
+    height: 0.3rem;
+    margin-top: 0.1rem
+}
+.centens{
+   justify-content: center
+}
+
+.kui .nine{
+    flex: 8;
+}
+
+
+h2{
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+.content{
+    width: 100%;
+    /* height: 2rem; */
+    padding-top: 0.4rem
+    /* background: rgb(210, 233, 5); */
+}
+.img img{
+    width: 5.33rem;
+    height: 3.45rem;
+}
+hr{
+    border-color: rgb(244,244,244);
+    width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 1.307rem;
+    background: rgb(244,244,244);
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.xinwen{
+    width: 0.88rem;
+    height: 0.88rem;
+    overflow: hidden;
+    background: url(../img/ws_active.png) center no-repeat;
+    background-size: 0.666667rem;
+}
+.zhaohuo{
+    width: 0.88rem;
+    height: 0.88rem;
+    overflow: hidden;
+    background: url(../img/dwawds.png) center no-repeat;
+    background-size: 0.666667rem;
+}
+.woode{
+    width: 0.88rem;
+    height: 0.88rem;
+    overflow: hidden;
+    background: url(../img/footer.png) center no-repeat;
+    background-size: 0.666667rem;
+}
+footer p{
+  margin-left: 0.1rem 
+}
+#spread {
+    height: 0px;
+    overflow: hidden;
+}
+#btn{
+    float: right;
+} 
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
