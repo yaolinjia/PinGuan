@@ -8,7 +8,6 @@
     <title>找品牌</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/brand.css">
-    <link rel="stylesheet" href="./css/mui.min.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
     <script src="./js/flexible.js"></script>
     <script src="./js/swiper.min.js"></script>
@@ -409,35 +408,7 @@
             });
             var wrap = document.getElementById("wrap");
             new IScroll(wrap);
-
-            //  上拉加载
-            mui.init({
-                pullRefresh: {
-                    container: "#wrap", //待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
-                    up: {
-                        height: '20px', //可选,默认50px.下拉刷新控件的高度,
-                        range: '40px', //可选 默认100px,控件可下拉拖拽的范围
-                        auto: false, //可选,默认false.自动上拉加载一次
-                        contentrefresh: "正在加载更多的数据...", //可选，正在加载状态时，上拉加载控件上显示的标题内容
-                        contentnomore: '没有更多数据了', //可选，请求完毕若没有更多数据时显示的提醒内容；
-                        callback: getVal
-                    }
-                }
-            });
-            let news = document.getElementsByClassName('pro-list')[0];
-            let aNew = news.getElementsByClassName('pro-item')[0];
-
-            function getVal() {
-                let oDiv = document.createElement('div');
-                oDiv.className = 'pro-item';
-                oDiv.innerHTML = aNew.innerHTML;
-                setTimeout(() => { //定时器，提升用户体验
-                    news.appendChild(oDiv)
-                    this.endPullupToRefresh(false)
-                }, 1500);
-            }
         </script>
     </div>
 </body>
-
 </html>
